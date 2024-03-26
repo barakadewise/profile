@@ -1,0 +1,9 @@
+@media screen and (max-width:1000px){
+    .navabar{
+        display: none;
+    }
+    .humburger-nav{
+        display: flex;
+    }
+
+}
