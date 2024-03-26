@@ -147,7 +147,18 @@ transition: all 0.3 ease-in-out;
     .humburger-nav{
         display: flex;
     }
+    .profile {
+        flex-direction: column; /* Stack children vertically */
+        padding-top: 20vh; 
+        justify-content: center;
+    }
 
+    .profile_pc img {
+        width: 150px; /* Adjust image width for small screens */
+        height: 150px; /* Adjust image height for small screens */
+    }
+
+   
 }
 
 /* SECTION PANEL */
@@ -165,12 +176,31 @@ section{
     margin: auto 0;
 }
 
-#profile{
+/* #profile{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap:5rem;
     height: 80vh;
+    box-sizing: border-box;
+  
+} */
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set height to full viewport height */
+    padding-top: 10vh; /* Add space on top */
+    box-sizing: border-box;
+    text-align: center; /* Center text within section */
 }
+.profile_pc img {
+    width: 200px; /* Adjust image width as needed */
+    height: 200px; /* Adjust image height as needed */
+    border-radius: 50%;
+    border: 0.2rem rgb(53, 53, 53) solid;
+}
+
 .section_text{
     align-self:center;
     text-align: center;
