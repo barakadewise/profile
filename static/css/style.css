@@ -13,6 +13,7 @@
 body{
     font-family: "Poppins",sans-serif;
     background-color: whitesmoke;
+    
 }
 html{
     scroll-behavior: smooth;
@@ -66,7 +67,20 @@ a:hover{
 SMALL SCREEN NAV  CSS*/
 .humburger-nav{
     display: none;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: fixed; /* Position fixed to keep it centered regardless of scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Adjust background color as needed */
+    z-index:1; /* Ensure it's above other content */
+    padding: 8px 0; /* Add some padding for better spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+   
+ 
 }
+
 .humbuger-menu{
     position: relative;
     display: inline-block;
@@ -126,12 +140,20 @@ transition: all 0.3 ease-in-out;
 .humbuger-icon.open span:last-child{
     transform: rotate(-45deg) translate(10px,-5px);
 }
+@media screen and (max-width:1000px){
+    .navabar{
+        display: none;
+    }
+    .humburger-nav{
+        display: flex;
+    }
 
+}
 
 /* SECTION PANEL */
 section{
     padding-top: 2vh;
-    height: 96vh;
+    height: 50vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -217,6 +239,7 @@ section{
 /* ABOUT SECTION */
 .about,.experiance-section,.projects-section{
     position: relative;
+    
    
 }
 .header{
@@ -297,7 +320,7 @@ padding: 1rem;
     border: 0.1rem solid;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+  
   
   
     
@@ -380,3 +403,4 @@ margin:4px;
 .project-sub-title{
     text-align: center;
 }
+
