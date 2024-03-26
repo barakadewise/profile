@@ -314,7 +314,7 @@ padding: 1rem;
      
 }
 
-.experiance-sub-title{
+.experiance-sub-title,.project-sub-title{
     font-size: 1.5rem;
     text-align: start;
     margin: 10px;
@@ -336,4 +336,34 @@ padding: 1rem;
 }
 article{
 margin: 4px 0;
+}
+
+.projects-container{
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.projects-details{
+    display: flex;
+   gap: 2rem;
+   justify-content: center;
+   margin: 5px 5px;
+}
+.project-card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px;
+    border: solid 0.1rem rgb(181, 181, 181);
+    border-radius: 1rem;
+
+}
+.card-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 5px;
+}
+.project-sub-title{
+    text-align: center;
 }
