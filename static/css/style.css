@@ -147,17 +147,7 @@ transition: all 0.3 ease-in-out;
     .humburger-nav{
         display: flex;
     }
-    .profile {
-        flex-direction: column; /* Stack children vertically */
-        padding-top: 20vh; 
-        justify-content: center;
-    }
-
-    .profile_pc img {
-        width: 150px; /* Adjust image width for small screens */
-        height: 150px; /* Adjust image height for small screens */
-    }
-
+    
    
 }
 
@@ -169,37 +159,41 @@ section{
     box-sizing: border-box;
     min-height: fit-content;
 }
-.profile_pc{
+.profile_imag_div{
+    justify-content: center;
     display: flex;
-    height: 400px;
+    height: 350px;
     width: 400px;
     margin: auto 0;
+ 
 }
 
-/* #profile{
+.profile_imag{
+    border: 0.2rem rgb(181, 181, 181) solid;
+    border-radius: 50%;
+    margin: 2rem;
+    width: 280px;
+}
+.profile{
     display: flex;
     justify-content: center;
     align-items: center;
     gap:5rem;
     height: 80vh;
     box-sizing: border-box;
+    
   
-} */
-.profile {
+}
+/* .profile {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Set height to full viewport height */
-    padding-top: 10vh; /* Add space on top */
+    height: 100vh; 
+    padding-top: 10vh; 
     box-sizing: border-box;
-    text-align: center; /* Center text within section */
-}
-.profile_pc img {
-    width: 200px; /* Adjust image width as needed */
-    height: 200px; /* Adjust image height as needed */
-    border-radius: 50%;
-    border: 0.2rem rgb(53, 53, 53) solid;
-}
+    text-align: center; 
+} */
+
 
 .section_text{
     align-self:center;
